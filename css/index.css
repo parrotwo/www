@@ -1,0 +1,167 @@
+*, *::before, *::after {
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+  
+html {
+    padding: 0 1rem;
+}
+  
+body {
+    margin: 0 auto;
+}
+
+.site-header {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+nav a {
+    margin-right: 1rem;
+    color: grey;
+    text-decoration: none;
+  }
+  nav a:hover {
+    color: black;
+  }
+  nav a:last-child {
+    margin-right: 0;
+}
+  
+.nav-active {
+    color: black;
+    font-weight: 400;
+}
+
+.b-text {
+    padding-top: 0.5rem;
+}
+
+.h-proj img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+}
+
+.post-preview {
+  margin: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post-preview div {
+  width: 50%;
+  margin: 0 2rem;
+}
+
+.post-preview img {
+  height: 100%;
+  width: 100%;
+}
+
+.post-preview a {
+  color: grey;
+  text-decoration: none;
+}
+
+.post-preview a:hover {
+  color: black;
+}
+
+.post-preview-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 1rem;
+  color: #333;
+  font-weight: 300;
+}
+
+.post-preview-text div {
+  margin: 0.25rem;
+  width: 100%;
+}
+
+.detail::before {
+  content: "◎";
+  font-size: .5rem;
+  height: 1rem;
+  margin: 0 .5rem 3rem 0;
+  vertical-align: middle;
+}
+
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-y: hidden;
+  margin-top: 4rem;
+  padding: 1.8rem 0 5rem;
+  border-top: 1px solid #c6c1be;
+}
+
+.site-footer p, .site-footer a {
+  margin: 0;
+  color: #6d6e71;
+  font-size: 1.4rem;
+}
+
+.post-h {
+  text-align: center;
+}
+
+.post-h h1 {
+  margin-bottom: 0.5rem;
+  pointer-events: none;
+}
+
+.post-h .date {
+  font-size: 11.57px;
+  color: #6d6e71;
+  margin-bottom: 3rem;
+}
+
+.post-h h4 {
+  margin-bottom: 2rem;
+}
+
+.post-h video, .post-h img {
+  width: 100%;
+}
+
+.b-text a {
+  color: black;
+}
+
+.b-text p:first-child {
+  margin-top: 0;
+}
+
+.hover {
+    cursor: pointer;
+    transition: transform 0.30s;
+}
+
+.hover:hover {
+    transform: scale(1.1);
+}
+
+body::selection {
+  background: #fff2a8;
+}
+
+body::-moz-selection {
+  background: #fff2a8;
+}
